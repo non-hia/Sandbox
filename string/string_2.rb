@@ -1,0 +1,6 @@
+puts(%Q{こんにちは})
+puts(%q{Hello World!})
+puts(%Q[こんにちは])
+puts(%q(Hello World!))
+puts(%Q<こんにちは">)
+puts(%q!Hello World\!!)
