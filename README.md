@@ -1,3 +1,3 @@
-# Ruby-Sandbox
-Rubyでいろいろコード書いてみる
+# Sandbox
+いろいろコード書いてみる
 
