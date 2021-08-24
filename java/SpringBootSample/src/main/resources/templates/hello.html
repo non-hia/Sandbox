@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>hello</title>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>NAME</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr th:each="e : ${userList}" th:object="${e}">
+        <td th:text="*{userId}"></td>
+        <td th:text="*{name}"></td>
+      </tr>
+    </tbody>
+  </table>
+  <form action="#" th:action="@{/hello}" th:object="${form}" method="post">
+    <p>NAME: <input type="text" th:field="*{name}" /></p>
+    <p><input type="submit" value="登録" /></p>
+  </form> 
+</body>
+</html>
